@@ -15,6 +15,11 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+a {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
 /* header */
 
 header {
@@ -62,7 +67,6 @@ header {
 }
 
 .btn-get-started {
-	font-family: 'Raleway', sans-serif;
 	display: block;
 	text-decoration: none;
 	color: white;
@@ -125,4 +129,71 @@ header {
 	.hero-credo {
 		font-size: 10px;
 	}
+}
+
+/* nav */
+
+.nav,
+.nav-logo,
+.nav-links,
+.nav-social-links {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+
+.nav {
+	height: 90px;
+	min-height: 90px;
+}
+
+.nav-logo {
+	padding: 1.5em;
+}
+
+.nav-links {
+	padding: 0 2em;
+}
+
+.nav-item {
+	list-style: none;
+	margin-right: 1.5em;
+}
+
+.nav-item a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.nav {
+	border: 1px solid rgba(150, 150, 150, .2);
+	margin-bottom: 3em;
+}
+
+.nav-social-links {
+	height: 100%;
+	margin-left: auto;
+	padding: 0 2em;
+}
+
+.nav-links,
+.nav-social-links {
+	height: 100%;
+	border-left: 1px solid rgba(150, 150, 150, .2);
+}
+
+.nav-social-links a {
+	color: black;
+	margin-right: .5em;
+	border-radius: 50%;
+	border: 2px solid black;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
