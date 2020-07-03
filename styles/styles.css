@@ -1391,3 +1391,115 @@ button {
 		font-size: 2rem;
 	}
 }
+
+/* blog-post */
+
+.blog-posts-container {
+	grid-column: 2 / span 1;
+	text-align: center;
+	padding: 1em 0 2em;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.blog-post {
+	padding: 3em 0;
+}
+
+.blog-posts-container .img-container {
+	width: 100%;
+	position: relative;
+	margin-bottom: 3em;
+}
+
+.blog-posts-container .blog-post-img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.blog-posts-container .blog-post-avatar {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, 40%);
+	border-radius: 50%;
+	border: 6px solid white;
+}
+
+.blog-posts-container .blog-post-title {
+	font-size: 1.9rem;
+	font-weight: 800;
+	margin-bottom: .25em;
+	letter-spacing: 1px;
+}
+
+.blog-posts-container .blog-post-info {
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+	color: #aaa;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+}
+
+.blog-post-link-solopine-design {
+	margin-right: .75em;
+}
+
+.blog-post-link-solopine-design,
+.blog-post-category {
+	color: #aaa;
+	font-weight: 700;
+}
+
+.blog-post-social-link {
+	color: #00aaf0;
+	font-weight: 700;
+}
+
+.blog-post-date {
+	position: relative;
+}
+
+.blog-post-date::before {
+	content: '\2022';
+	display: inline-block;
+	margin: 0 .75em;
+}
+
+.blog-post-date::after {
+	content: '\2022';
+	display: inline-block;
+	margin: 0 .75em;
+}
+
+.blog-post-content-container {
+	width: 90%;
+	margin: 1em auto;
+}
+
+.blog-posts-container .blog-post-content {
+	margin: 1em 0;
+	text-align: left;
+}
+
+.blog-post-btn {
+	padding: 1em 0;
+}
+
+.blog-post-btn .btn {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: black;
+	border: 2px solid;
+	padding: .6em 1em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all .3s ease-in-out;
+}
+
+.blog-post-btn .btn:hover {
+	background: #000;
+	color: #fff;
+	border: 2px solid #000;
+}
