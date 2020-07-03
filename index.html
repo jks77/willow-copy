@@ -6,55 +6,581 @@
         <title>Willow copy for practice</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     </head>
     <body>
 
         <!-- header -->
+        <div class="scroll-container">
+            <header>
 
-        <header>
-            <div class="hero-logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="hero-heading">
-                <p class="hero-intro-text">Timeless form for a modern market</p>
-                <h2 class="hero-title">bringing design to life</h2> 
-                <p class="hero-credo">Harmonizing the style & perfomance of travel goods since 1935</p>
-            </div>
-            <div class="hero-get-started">
-                <a href="#get-started" class="btn-get-started">get started</a>
-                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
-            </div>
-        </header>
-        <nav>
-            <div class="nav">
-                <div class="nav-logo">
-                    <img src="img/willowloogo.png" alt="">
+                <div class="hero-logo">
+                    <img src="img/logo/logo.png" alt="">
                 </div>
+
+                <div class="hero-heading">
+                    <p class="hero-intro-text">Timeless form for a modern market</p>
+                    <h2 class="hero-title">bringing design to life</h2> 
+                    <p class="hero-credo">Harmonizing the style & perfomance of travel goods since 1935</p>
+                </div>
+
+                <div class="hero-get-started">
+                    <a href="#get-started" class="btn-get-started">get started</a>
+                    <a href="#get-started"><i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
+                </div>
+
+            </header>
+
+            <!-- nav -->
+            
+            <div class="nav-container" id="get-started">
+
+                <div class="nav-logo">
+                    <img src="img/logo/willowloogo.png" alt="">               
+                    <button aria-label="Open navigation" class="open-nav show">&#9776;</button>
+                    <button aria-label="Close navigation" class="close-nav">&times;</button>
+                </div>
+                
+
+                <nav>
                     <ul class="nav-links">
                         <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#">About</a></li>
-                        <li class="nav-item"><a href="#">Services</a></li>
-                        <li class="nav-item"><a href="#">Work</a></li>
-                        <li class="nav-item"><a href="#">The Team</a></li>
-                        <li class="nav-item"><a href="#">Contact</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#services">Services</a></li>
+                        <li class="nav-item"><a href="#work">Work</a></li>
+                        <li class="nav-item"><a href="#team">The Team</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
                         <li class="nav-item"><a href="#">Blog</a></li>
                     </ul>
-                
-               
-                <div class="nav-social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                </div>
+                    
+                    
+                    <div class="nav-social-links social-links-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </nav>
+
             </div>
+
+            <div class="grid-container">
+                <section class="info-brand" id="about">
+
+                    <div class="info-brand-header content-header">
+                        <h2 class="info-brand-title content-title">Who are we?</h2>
+                        <p class="info-brand-subtitle content-subtitle">MODERN DIGITAL AGENCY</p> 
+                    </div>
+
+                    <div class="info-brand-intro-grid">
+                        <div class="info-brand-intro-text">Raw denim typewriter Carles irony. Helvetica wayfarers Blue Bottle, distillery vero you probably haven’t heard of them disrupt. Pariatur meh vegan ut art party. Trust fund chambray Marfa whatever proident, church-key sriracha craft beer put a bird on it excepteur before they sold out gastropub ad. Next level put a bird on it McSweeney’s magna, assumenda flannel PBR bespoke nisi messenger bag fanny pack. Single-origin coffee keytar wolf pickled. Pariatur meh vegan ut art party. Trust fund chambray lorem ipsum dolor.</div>
+                        <div class="info-brand-intro-percentage">
+                            <div class="info-brand-intro-percentage-item photoshop">
+                                <div class="info-brand-intro-percentage-container ">
+                                    <p class="info-brand-percentage-name">Photoshop</p>
+                                    <p class="info-brand-percentage-percentage">86%</p>
+                                </div>
+                                <div class="progress-bar-grey">
+                                    <div class="progress-bar-green"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-brand-intro-percentage-item wordpress">
+                                <div class="info-brand-intro-percentage-container ">
+                                    <p class="info-brand-percentage-name">Wordpress</p>
+                                    <p class="info-brand-percentage-percentage">95%</p>
+                                </div>
+                                <div class="progress-bar-grey">
+                                    <div class="progress-bar-green"></div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="info-brand-intro-percentage-item adobe-premiere">
+                                <div class="info-brand-intro-percentage-container ">
+                                    <p class="info-brand-percentage-name">Adobe Premiere</p>
+                                    <p class="info-brand-percentage-percentage">78%</p>
+                                </div>
+                                <div class="progress-bar-grey">
+                                    <div class="progress-bar-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-brand-cards">
+                        <div class="info-brand-card card">
+                            <img src="img/info-brand/connections.jpg" alt="" class="card-img">
+                            <h4 class="info-brand-card-title card-title">CREATING CONNECTIONS</h4>
+                            <p class="info-brand-card-content">Next level put a bird on it McSweeney’s magna, assumenda flannel PBR bespoke nisi messenger bag fanny pack. Single-origin coffee keytar wolf pickled.</p>
+                        </div>
+                        <div class="info-brand-card card">
+                            <img src="img/info-brand/creative.jpg" alt="" class="card-img">
+                            <h4 class="info-brand-card-title card-title">BEING CREATIVE</h4>
+                            <p class="info-brand-card-content">Next level put a bird on it McSweeney’s magna, assumenda flannel PBR bespoke nisi messenger bag fanny pack. Single-origin coffee keytar wolf pickled.</p>
+                        </div>
+                        <div class="info-brand-card card">
+                            <img src="img/info-brand/pulse.jpg" alt="" class="card-img">
+                            <h4 class="info-brand-card-title card-title">FINGER ON THE PULSE</h4>
+                            <p class="info-brand-card-content">Next level put a bird on it McSweeney’s magna, assumenda flannel PBR bespoke nisi messenger bag fanny pack. Single-origin coffee keytar wolf pickled.</p>
+                        </div>
+                    </div>
+                </section>
             
-        </nav>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, beatae maiores! Praesentium nobis in beatae quo eaque sint ducimus, tenetur itaque, aliquid officia dolorem sapiente reprehenderit, deserunt fuga quos hic. Quasi sit, natus cupiditate non obcaecati cum aliquid facilis nulla?</p>
-        
-        <script src="" async defer></script>
+
+                <section class="trivia-container">
+                    <div class="trivia-information">
+                        <div class="trivia-information-item">
+                            <i class="far fa-thumbs-up"></i>
+                            <p class="trivia-information-number">25000</p>
+                            <p class="trivia-information-subject">Happy customers</p>
+                        </div>
+                        <div class="trivia-information-item">
+                            <i class="fas fa-mug-hot trivia-information-icon"></i>
+                            <p class="trivia-information-number">10200</p>
+                            <p class="trivia-information-subject">Cups of coffee</p>
+                        </div>
+                        <div class="trivia-information-item">
+                            <i class="fas fa-globe trivia-information-icon"></i>
+                            <p class="trivia-information-number">50680</p>
+                            <p class="trivia-information-subject">Miles traveled</p>
+                        </div>
+                        <div class="trivia-information-item">
+                            <i class="fas fa-music trivia-information-icon"></i>
+                            <p class="trivia-information-number">39200</p>
+                            <p class="trivia-information-subject">Songs listened to</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services" id="services">
+
+                    <div class="services-header content-header">
+                        <h2 class="info-brand-title content-title">What we can do</h2>
+                        <p class="info-brand-subtitle content-subtitle">Our services</p> 
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="services-item-container">
+                            <div class="service-item">
+                                <div class="service-icon-container">
+                                    <div class="service-icon">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                </div>  
+                                <div class="service-content-container">
+                                    <h3 class="service-title">WEB & MOBILE DESIGN</h3>
+                                    <p class="service-content">Raw denim typewriter Carles irony. Helvetica farers Blue Bottle, distery vero you probably haven’t heard of them disrupt. Pariatur meh vegan ut.</p>
+                                </div>                  
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon-container">
+                                    <div class="service-icon">
+                                        <i class="far fa-lightbulb"></i>
+                                    </div>
+                                </div>  
+                                <div class="service-content-container">
+                                    <h3 class="service-title">BRANDING</h3>
+                                    <p class="service-content">Raw denim typewriter Carles irony. Helvetica farers Blue Bottle, distery vero you probably haven’t heard of them disrupt. Pariatur meh vegan.</p>
+                                </div>                  
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon-container">
+                                    <div class="service-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                </div>  
+                                <div class="service-content-container">
+                                    <h3 class="service-title">SOCIAL MEDIA</h3>
+                                    <p class="service-content">Raw denim typewriter Carles irony. Helvetica farers Blue Bottle, distery vero you probably haven’t heard of them disrupt. Pariatur meh vegan ut.</p>
+                                </div>                  
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon-container">
+                                    <div class="service-icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                </div>  
+                                <div class="service-content-container">
+                                    <h3 class="service-title">E-COMMERCE</h3>
+                                    <p class="service-content">Raw denim typewriter Carles irony. Helvetica farers Blue Bottle, distery vero you probably haven’t heard of them disrupt. Pariatur meh vegan ut.</p>
+                                </div>                  
+                            </div>
+                        </div>                  
+                        
+                        <div class="services-img-container">
+                            <img src="img/services/services-img.png" alt="">
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- our work  -->
+
+                <section class="our-work-container" id="work">
+                    <div class="our-work-information">
+                        <h3>OUR WORK</h3>
+                    </div>
+                </section>
+
+                <!-- portfolio -->
+
+                <section class="portfolio-container">
+                    <div class="portfolio-filter">
+                        <a href="#" class="active">ALL</a>
+                        <a href="#">Branding</a>
+                        <a href="#">Graphic design</a>
+                        <a href="#">Print</a>
+                        <a href="#">Video</a>
+                    </div>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/iphone-app.jpg" alt="">
+                            <h4 class="portfolio-title">INSTANTSNAPPER IPHONE APP</h4>
+                            <p class="portfolio-type">BRANDING / VIDEO</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/flat-stroke-icons.png" alt="">
+                            <h4 class="portfolio-title">FLAT STROKE ICONS SET</h4>
+                            <p class="portfolio-type">GRAPHIC DESIGN / PRINT</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/logo-designs.jpg" alt="">
+                            <h4 class="portfolio-title">LOGO DESIGNS 2014</h4>
+                            <p class="portfolio-type">BRANDING / GRAPHIC DESIGN</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/solo-pine-website.jpg" alt="">
+                            <h4 class="portfolio-title">SOLO PINE WEBSITE</h4>
+                            <p class="portfolio-type">GRAPHIC DESIGN / PRINT</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/food-center-nyc.jpg" alt="">
+                            <h4 class="portfolio-title">FOOD CENTER NYC</h4>
+                            <p class="portfolio-type">BRANDING / GRAPHIC DESIGN</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/portfolio/wedding-decorations.jpg" alt="">
+                            <h4 class="portfolio-title">WEDDING DECORATIONS</h4>
+                            <p class="portfolio-type"BRANDING / VIDEO</p>
+                            <a href="#" class="portfolio-view-project">View&nbsp;project</a>
+                        </div>
+                    </div>
+
+                    <!-- load more -->
+
+                    <div class="btn-load-more-container">
+                        <a href="#" class="btn-load-more">
+                            <i class="load-more-icon fas fa-sync-alt"></i>
+                            <span class="load-more-text">Load more</span> 
+                        </a> 
+                    </div>
+                </section>
+
+                <section class="quotes-container">
+                    <div class="quote">
+                        
+                        <figure class="quote">
+                            <q>
+                                Mister wayne, if you don’t want to tell me exactly what you’re doing, when i’m asked, i don’t have to lie. but don’t think of me as an idiot. Multiply your anger by about a hundred, kate, that’s how much he thinks he loves you.
+                            </q>
+                            <figcaption>
+                                Lucius Fox &mdash; <cite>DK Company INC.</cite> </figcaption>
+                        </figure>
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                </section>
+
+                <section class="team-container" id="team">
+
+                    <div class="team-header content-header">
+                        <h2 class="team-title content-title">Meet the talents</h2>
+                        <p class="team-subtitle content-subtitle">MEET THE TEAM</p> 
+                    </div>
+
+                    <div class="team-card-container">
+                        <div class="team-card card">
+                            
+                            <div class="img-container">
+                                <img src="img/team/member-clark-thornton.jpg" alt="" class="card-img">
+                                <div class="card-social-links ">
+                                    <p class="card-social-links-text">find me on</p>
+                                    <div class="social-links-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class=" card-title">CLARK THORNTON</h4>
+                            <p class="card-subtitle">CO-FOUNDER & TECHNICAL DIRECTOR</p>
+                            <div class="card-content">Clark Thorton is a designer who works remotely from Birmingham, AL. A graduate of Ole Miss, where he played quidditch.</div>
+                        </div>
+
+                        <div class="team-card card">
+
+                            <div class="img-container">
+                                <img src="img/team/member-kathleen-fox.jpg" alt="" class="card-img">
+                                <div class="card-social-links ">
+                                    <p class="card-social-links-text">find me on</p>
+                                    <div class="social-links-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="card-title">KATHLEEN FOX</h4>
+                            <p class="card-subtitle">CO-FOUNDER & TECHNICAL DIRECTOR</p>
+                            <div class="card-content">Clark Thorton is a designer who works remotely from Birmingham, AL. A graduate of Ole Miss, where he played quidditch.</div>
+                        </div>
+
+                        <div class="team-card card">
+
+                            <div class="img-container">
+                                <img src="img/team/member-robert-murphy.jpg" alt="" class="card-img">
+                                <div class="card-social-links ">
+                                    <p class="card-social-links-text">find me on</p>
+                                    <div class="social-links-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="card-title">ROBERT MURPHY</h4>
+                            <p class="card-subtitle">CO-FOUNDER & TECHNICAL DIRECTOR</p>
+                            <div class="card-content">Clark Thorton is a designer who works remotely from Birmingham, AL. A graduate of Ole Miss, where he played quidditch.</div>
+                        </div>
+
+                        <div class="team-card card">
+
+                            <div class="img-container">
+                                <img src="img/team/member-kristina-collins.jpg" alt="" class="card-img">
+                                <div class="card-social-links ">
+                                    <p class="card-social-links-text">find me on</p>
+                                    <div class="social-links-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="card-title">KRISTINA COLLINS</h4>
+                            <p class="card-subtitle">CO-FOUNDER & TECHNICAL DIRECTOR</p>
+                            <div class="card-content">Clark Thorton is a designer who works remotely from Birmingham, AL. A graduate of Ole Miss, where he played quidditch.</div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section class="buy-willow">
+                    <div class="buy-willow-container">
+                        <div class="img-container">
+                            <img src="img/buy-willow/buynow.png" srcset="img/buy-willow/buynow.png 732w, buy-willow-now-300x180.png 300w" sizes="(max-width:768px) 300px, 723px" alt="">
+                        </div>
+                        <div class="buy-willow-content">
+                            <h3>Buy Willow now</h3>
+                            <p>Placeat Vice mumblecore nostrud, mustache are seitaninty. Squid tempor cillum, locavore stumpton pickled VHS literally. Organic plaid ugh, dream selvage fingerstache dolore stumptown elit Salvia master cleanse quis retro. Elit dreamcatcher four loko, mumblecore salvia incididunt selfies Banksy placeat. Fashion axe 90’s accusamus</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    
+
+                        
+                </section>
+
+                <!-- blog -->
+
+                <section class="blog-container">
+
+                    <div class="blog-header content-header">
+                        <h2 class="blog-title content-title">Latest from the blog</h2>
+                        <p class="blog-subtitle content-subtitle">The blog</p> 
+                    </div>
+
+                    <div class="blog-card-container">
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-music-disclosure.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Music</div>
+                                <h4 class="card-subtitle"><a href="#">Disclosure – You & Me Flume Remix</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 29, 2014</p>
+                            </div>
+                    
+                        </div>
+
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-food-health-best-drinks.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Food & Health</div>
+                                <h4 class="card-subtitle"><a href="#">How to Make the Best Drinks</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 28, 2014</p>
+                            </div>
+                    
+                        </div>
+
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-travel.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Travel</div>
+                                <h4 class="card-subtitle"><a href="#">Best Photography of 2014</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 28, 2014</p>
+                            </div>
+                    
+                        </div>
+
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-music-ellie-goulding.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Music</div>
+                                <h4 class="card-subtitle"><a href="#">Ellie Goulding – High For This</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 28, 2014</p>
+                            </div>
+                    
+                        </div>
+
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-food-health-italian-style.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Food & Health</div>
+                                <h4 class="card-subtitle"><a href="#">Homemade Italian Style Gorgonzola Pizza Recipe</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 28, 2014</p>
+                            </div>
+                    
+                        </div>
+
+                        <div class="blog-card card">
+
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="img/blog/blog-travel-norwegian-fjords.jpg" alt="" class="card-img">
+                                </a>
+                                
+                            </div>
+                            <div class="content-container">
+                                <div class="category">Travel</div>
+                                <h4 class="card-subtitle"><a href="#">Explore the Beautiful Norwegian Fjords</a> </h4>
+                                <p class="card-content">Soluta eirmod an mel, sea ei probo quaerendum. Sea et aliquam volutpat. Et doctus aliquip verterem mei, ut pri vidit facer solet, vim legere probatus..</p>
+                                <p class="date">April 28, 2014</p>
+                            </div>
+                    
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="willow-icons" id="contact">
+                    <p>Did you know that Willow comes packed with 450+ icons out of the box?</p>
+                </section>
+
+                <section class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.0050824652085!2d5.941424015954624!3d52.56951934031026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8786f567013e9%3A0x38179051f47077a7!2sRietgors%2049%2C%208271%20GJ%20IJsselmuiden!5e0!3m2!1snl!2snl!4v1593266975864!5m2!1snl!2snl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="google-maps-city">
+                        IJSSELMUIDEN
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="footer-container-grid">
+                        <div class="footer-items-container">
+                            <div class="footer-item">
+                                <h4 class="footer-item-title">General</h4>
+                                <p><span class="fas fa-envelope"></span>contact@company.com</p>
+                                <p><span class="fas fa-phone-alt"></span>+1 (555) 295-5555</p>
+                                <p><i class="fas fa-globe-europe"></i>www.solopine.com</p>
+                            </div>
+                            <div class="footer-item">
+                                <h4 class="footer-item-title">Stay connected</h4>
+                                <div class="footer-item-icons-container">
+                                    <div class="social-links-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-item footer-item-location">
+                            <h4 class="footer-item-title">Willow HQ</h4>
+                            <p><i class="fas fa-globe-asia"></i>Malang, East Java, Indonesia</p>
+                            <p><i class="fas fa-home"></i>Silicon Valley, California, USA</p>
+                        </div>
+                        <div class="footer-item form-item">
+                            <h4 class="footer-item-title">Contact us</h4>
+                            <form action="#">
+                                <div class="form-container-grid">
+                                    <input type="text" placeholder="Full Name">
+                                    <input type="email" placeholder="Email Address">
+                                    <input type="text" class="form-subject" placeholder="Subject">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                                </div>
+                                
+                                <button>send message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="img/logo/logo.png" alt="">
+                    </div>
+                    <div class="footer-copyright">
+                        <p class="copyright-made">Made with <span class="fas fa-heart"></span> in Ijsselmuiden</p>
+                        <p class="copyright-year
+                        ">&copy; 2014 SOLO PINE DESIGNS - ALL RIGHTS RESERVED</p>
+                    </div>
+                </footer>
+            </div>
+         </div>
+        <script src="script.js" async defer></script>
     </body>
 </html>
