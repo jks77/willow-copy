@@ -1415,7 +1415,6 @@ button {
 	grid-column: 2 / span 1;
 	text-align: center;
 	padding: 1em 0 2em;
-	width: 85%;
 	margin: 0 auto;
 }
 
@@ -1478,12 +1477,7 @@ button {
 	position: relative;
 }
 
-.blog-post-date::before {
-	content: '\2022';
-	display: inline-block;
-	margin: 0 .75em;
-}
-
+.blog-post-date::before,
 .blog-post-date::after {
 	content: '\2022';
 	display: inline-block;
@@ -1519,4 +1513,10 @@ button {
 	background: #000;
 	color: #fff;
 	border: 2px solid #000;
+}
+
+@media (max-width: 990px) {
+	.blog-post-content-container {
+		width: 100%;
+	}
 }
