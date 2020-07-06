@@ -19,10 +19,6 @@ body {
 	overflow: hidden;
 }
 
-.grid-container {
-	z-index: 3;
-}
-
 .scroll-container {
 	width: 100%;
 	height: 100%;
@@ -56,7 +52,7 @@ header {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 2em 0;
+	padding: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -72,23 +68,22 @@ header {
 	font-style: italic;
 	font-weight: 400;
 	opacity: .8;
-	font-size: 20px;
+	font-size: 22px;
 	letter-spacing: .5px;
 }
 
 .hero-title {
 	font-weight: black;
-	font-size: 64px;
+	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	margin-top: .3em;
-	margin-bottom: .3em;
+	font-weight: 800;
 }
 
 .hero-credo {
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 	opacity: .7;
 	font-size: 12px;
 }
@@ -115,10 +110,11 @@ header {
 }
 
 @media (max-width: 990px) {
-	.fa-angle-down {
+	.hero-logo {
 		display: none;
 	}
-	.hero-logo {
+
+	.fa-angle-down {
 		display: none;
 	}
 
@@ -146,7 +142,7 @@ header {
 
 @media (max-width: 568px) {
 	.hero-title {
-		font-size: 2.5em;
+		font-size: 3em;
 	}
 
 	.hero-intro-text {
@@ -294,7 +290,7 @@ nav {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: minmax(1em, 1fr) minmax(0, 1100px) minmax(1em, 1fr);
+	grid-template-columns: minmax(2em, 1fr) minmax(0, 1100px) minmax(2em, 1fr);
 }
 
 .info-brand {
@@ -336,6 +332,11 @@ nav {
 .info-brand-intro-text {
 	font-size: 14px;
 	line-height: 1.8;
+}
+
+.info-brand .intro-text-link {
+	color: #0faf97;
+	font-weight: 700;
 }
 
 .info-brand-intro-percentage-item {
@@ -399,7 +400,7 @@ nav {
 	font-size: 18px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 767px) {
 	.info-brand {
 		padding-bottom: 2em;
 	}
@@ -411,7 +412,13 @@ nav {
 
 	.info-brand-intro-text,
 	.info-brand-card {
-		margin-bottom: 2em;
+		margin-bottom: 3.5em;
+	}
+}
+
+@media (max-width: 550px) {
+	.grid-container {
+		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 1100px) minmax(1.5em, 1fr);
 	}
 }
 
@@ -446,18 +453,20 @@ nav {
 }
 
 .trivia-information-number {
-	font-size: 32px;
+	font-size: 2.5rem;
 	font-weight: 800;
 	margin-top: .5em;
+	margin-bottom: -.1em;
 }
 
 .trivia-information-subject {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 600;
+	letter-spacing: 1px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
 	.trivia-information-item {
 		padding: 1em;
 	}
@@ -465,7 +474,7 @@ nav {
 
 @media (max-width: 780px) {
 	.trivia-container {
-		height: 900px;
+		height: 1000px;
 	}
 	.trivia-information {
 		flex-direction: column;
@@ -614,6 +623,10 @@ nav {
 	text-align: center;
 	justify-content: center;
 	padding: 3em;
+}
+
+.portfolio-container .img-container:hover {
+	opacity: .8;
 }
 
 .portfolio-view-project,
@@ -1020,7 +1033,6 @@ input[type='radio']:first-of-type {
 
 .blog-container {
 	grid-column: 1 / -1;
-	margin-bottom: 4em;
 	background: #f3f3f3;
 	padding: 6em 0;
 }
@@ -1030,9 +1042,9 @@ input[type='radio']:first-of-type {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2em;
 	/* width: 1000px; */
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 2em;
 }
 
 .blog-card-container .img-container {
@@ -1107,6 +1119,7 @@ input[type='radio']:first-of-type {
 	.blog-card-container {
 		grid-template-columns: 1fr;
 		gap: 2em;
+		padding: 0 1.5em;
 	}
 }
 
@@ -1138,7 +1151,6 @@ input[type='radio']:first-of-type {
 .google-maps {
 	grid-column: 1 / -1;
 	position: relative;
-	filter: brightness(70%);
 	transition: all .3s ease-in-out;
 	margin: 0;
 	padding: 0;
