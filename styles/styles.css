@@ -109,6 +109,12 @@ header {
 	color: white;
 }
 
+@media (max-width: 1366px) {
+	header {
+		background-attachment: scroll;
+	}
+}
+
 @media (max-width: 990px) {
 	.hero-logo {
 		display: none;
