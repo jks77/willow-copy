@@ -213,6 +213,7 @@ nav,
 	top: .4em;
 }
 
+.previous-next,
 nav {
 	width: 100%;
 	justify-content: space-between;
@@ -709,20 +710,19 @@ nav {
 
 /* load more */
 
-.btn-load-more-container {
+.btn-with-icon-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.btn-load-more {
+.btn-with-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid black;
 	color: black;
 	transition: all .2s ease-in-out;
-	color: black;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -730,20 +730,20 @@ nav {
 	transition: all .2s ease-in-out;
 }
 
-.btn-load-more:hover,
-.btn-load-more:hover .load-more-text {
+.btn-with-icon:hover,
+.btn-with-icon:hover .btn-text {
 	background: black;
 	color: white;
 }
 
-.load-more-icon {
+.btn-icon {
 	padding: 0 12px;
 	display: inline-block;
 	font-size: 42px;
 	height: 100%;
 }
 
-.load-more-text {
+.btn-text {
 	padding: .6em 1em;
 	display: inline-block;
 	height: 100%;
@@ -1525,4 +1525,298 @@ button {
 	.blog-post-content-container {
 		width: 100%;
 	}
+}
+
+/* instant-snapper */
+
+.link-previous-project {
+	font-size: 13px;
+	color: #aaa;
+	margin-left: auto;
+	margin-right: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: .5em;
+	transition: all .2s ease-in-out;
+}
+
+.link-previous-project:hover {
+	color: #777;
+}
+
+.x-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(150, 150, 150, .2);
+	height: 100%;
+	width: 90px;
+}
+
+.x-line {
+	position: absolute;
+	display: inline-block;
+	width: 2em;
+	height: 2px;
+	background: rgba(150, 150, 150, .3);
+	transition: all .2s ease-in-out;
+}
+
+.x-line-one {
+	transform: rotate(45deg);
+}
+
+.x-line-two {
+	transform: rotate(-45deg);
+}
+
+.x-container:hover .x-line {
+	background: rgba(150, 150, 150, .5);
+}
+
+/* portfolio instant snapper page */
+
+/* general */
+
+.text {
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* previous next */
+
+/* instant-snapper-info */
+
+.instant-snapper-info {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: minmax(2em, 1fr) minmax(0, 550px) minmax(0, 550px) minmax(2em, 1fr);
+	background: black;
+	background: url("../img/portfolio/pages/instant-snapper/main21.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 14em 0;
+}
+
+.instant-snapper-info-content {
+	grid-column: 2 /span 1;
+	color: #fff;
+}
+
+.instant-snapper-info-title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	margin-bottom: .4em;
+}
+
+.instant-snapper-info-text {
+	font-size: 0.875rem;
+	font-weight: 700;
+	padding-right: 1.5em;
+	margin-bottom: 1em;
+}
+
+.instant-snapper-info-content .btn-with-icon-container {
+	justify-content: flex-start;
+	margin-top: 2.5em;
+}
+
+.instant-snapper-info-content .btn-with-icon {
+	color: #fff;
+	border: 3px solid;
+}
+
+.instant-snapper-info-content .btn-with-icon:hover,
+.instant-snapper-info-content .btn-with-icon:hover .btn-text {
+	background: #fff;
+	color: #000;
+}
+
+.instant-snapper-info-content .btn-with-icon:hover {
+	border: 3px solid #fff;
+}
+.instant-snapper-info-content .btn-with-icon:hover .btn-text {
+	background: #fff;
+	color: #000;
+}
+
+.instant-snapper-info-content .btn-text {
+	color: #fff;
+	border-left: 3px solid #fff;
+}
+
+/* the project */
+
+.about-project-container {
+	grid-column: 2 / span 1;
+	display: grid;
+	grid-template-columns: minmax(0, 600px) minmax(0, 600px);
+	column-gap: 2em;
+}
+
+.about-project {
+	padding: 7em 0;
+}
+
+.project-title {
+	margin-bottom: .5em;
+}
+
+/* the product */
+
+.instant-snapper-product {
+	grid-column: 1 / -1;
+	background: #f4f4f4;
+	display: grid;
+	grid-template-columns: minmax(2em, 1fr) minmax(0, 550px) minmax(0, 550px) minmax(2em, 1fr);
+	padding: 5em 0;
+}
+
+.instant-snapper-product-content {
+	grid-column: 2 / span 1;
+	padding-right: 2em;
+}
+
+.instant-snapper-product-content .title {
+	font-size: 2.25rem;
+}
+
+.instant-snapper-product-content .text {
+	margin: 1em 0;
+}
+
+.instant-snapper-product-img img {
+	max-width: 100%;
+}
+
+/* instant-snapper-properties */
+
+.instant-snapper-properties {
+	grid-column: 2 / span 1;
+	padding: 5em 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2em;
+}
+
+.instant-snapper-properties-item .title {
+	margin: .4em 0;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	font-weight: 800;
+}
+
+.instant-snapper-properties .img-container img {
+	max-width: 100%;
+}
+
+/* share-project */
+
+.share-project {
+	padding: 8em 0;
+	grid-column: 1 / -1;
+	text-align: center;
+	border-top: 1px solid #eee;
+}
+
+.title-after-border-bottom {
+	text-align: center;
+	color: rgba(0, 0, 0, .25);
+	font-size: 13px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	margin-bottom: 4em;
+}
+
+.title-after-border-bottom::after {
+	content: '';
+	display: block;
+	background: rgba(0, 0, 0, .25);
+	width: 48px;
+	height: 2px;
+	margin-top: 1em;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.share-project-social-links {
+	display: flex;
+	justify-content: center;
+}
+
+.social-link-container {
+	width: 70px;
+	/* border: 1px solid red; */
+}
+
+.share-project-social-links a {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	/* border: 1px solid red; */
+	margin-right: 1em;
+	color: #fff;
+}
+
+.social-link-container {
+	margin-right: 1.5em;
+}
+
+.social-icon {
+	display: flex;
+	height: 1005;
+	/* border: 5px solid green; */
+}
+.facebook-link {
+	background: #3b5998;
+}
+
+.instagram-link {
+	background-color: #dd4c39;
+}
+
+.pinterest-link {
+	background-color: #cd1d1f;
+}
+
+.social-icon {
+	padding: 0 .5em .1em;
+}
+
+.social-icon .fa-facebook-f {
+	font-size: 13px;
+	color: white;
+	height: 100%;
+}
+
+.count {
+	display: inline-block;
+	width: 100%;
+	font-weight: 700;
+	padding-top: .1em;
+	/* border: 2px solid yellow; */
+	/* height: 100%; */
+}
+
+.count {
+	background-color: rgba(255, 255, 255, .25);
+
+	/* border: 2px solid yellow; */
+	/* height: 100%; */
+}
+
+/* footer */
+
+.footer-project {
+	background-color: #eee;
+	padding: 7em 0;
+}
+
+.footer-project .footer-logo {
+	margin-bottom: 0;
 }
