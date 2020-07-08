@@ -439,17 +439,20 @@ nav {
 	color: white;
 	height: 400px;
 	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(1.5em, 1fr) minmax(0, 1100px) minmax(1.5em, 1fr);
 }
 
 .trivia-information {
+	grid-column: 2 / span 1;
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .trivia-information-item {
-	padding: 1.5em;
+	padding: 1.5em 0;
 	opacity: .9;
 	font-size: 48px;
 }
@@ -472,15 +475,10 @@ nav {
 	letter-spacing: 1px;
 }
 
-@media (max-width: 1024px) {
-	.trivia-information-item {
-		padding: 1em;
-	}
-}
-
 @media (max-width: 780px) {
 	.trivia-container {
 		height: 1000px;
+		padding: 3em 0;
 	}
 	.trivia-information {
 		flex-direction: column;
@@ -1626,7 +1624,7 @@ button {
 	background: url("../img/portfolio/pages/instant-snapper/main21.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 14em 0;
+	padding: 10em 0;
 }
 
 .instant-snapper-info-content {
@@ -1836,15 +1834,10 @@ button {
 	width: 100%;
 	font-weight: 700;
 	padding-top: .1em;
-	/* border: 2px solid yellow; */
-	/* height: 100%; */
 }
 
 .count {
 	background-color: rgba(255, 255, 255, .25);
-
-	/* border: 2px solid yellow; */
-	/* height: 100%; */
 }
 
 /* footer */
@@ -1873,22 +1866,15 @@ button {
 		justify-content: center;
 		margin-top: 2em;
 	}
+
+	.share-project {
+		padding: 5em 0;
+	}
 }
 
 @media (max-width: 768px) {
-	.instant-snapper-info {
-		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 768px) minmax(1.5em, 1fr);
-		padding-left: 2em;
-		padding-right: 2em;
-		background: black;
-		background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-			url("../img/portfolio/pages/instant-snapper/main21.jpg");
-		background-size: cover;
-		background-position: center;
-	}
-
 	.instant-snapper-product {
-		padding: 5em 1.5em;
+		padding: 3em 1.5em;
 	}
 
 	.about-project-container {
@@ -1896,17 +1882,30 @@ button {
 	}
 
 	.about-project.title {
-		padding: 5em 0 1.5em;
+		padding: 3em 0 1.5em;
 	}
 
 	.about-project.my-role {
-		padding: 0 0 5em;
+		padding: 0 0 3em;
+	}
+
+	.instant-snapper-properties {
+		padding: 4em 0 1em;
 	}
 }
 
 @media (max-width: 550px) {
+	.instant-snapper-info {
+		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 768px) minmax(1.5em, 1fr);
+		background: black;
+		background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+			url("../img/portfolio/pages/instant-snapper/main21.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
 	.instant-snapper-info-title {
-		font-size: 1.75rem;
+		font-size: 2rem;
 	}
 
 	.instant-snapper-info-text {
