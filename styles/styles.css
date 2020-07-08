@@ -213,7 +213,6 @@ nav,
 	top: .4em;
 }
 
-.previous-next,
 nav {
 	width: 100%;
 	justify-content: space-between;
@@ -1528,6 +1527,36 @@ button {
 }
 
 /* instant-snapper */
+.previous-next-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.previous-next-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 90px;
+	min-height: 90px;
+	border: 1px solid rgba(150, 150, 150, .2);
+	background: white;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .1);
+}
+
+.nav {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
 
 .link-previous-project {
 	font-size: 13px;
@@ -1687,6 +1716,12 @@ button {
 	margin: 1em 0;
 }
 
+.instant-snapper-product-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .instant-snapper-product-img img {
 	max-width: 100%;
 }
@@ -1751,20 +1786,22 @@ button {
 
 .social-link-container {
 	width: 70px;
-	/* border: 1px solid red; */
 }
 
 .share-project-social-links a {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	/* border: 1px solid red; */
 	margin-right: 1em;
 	color: #fff;
 }
 
 .social-link-container {
 	margin-right: 1.5em;
+}
+
+.social-link-container:last-of-type {
+	margin-right: 0;
 }
 
 .social-icon {
@@ -1819,4 +1856,72 @@ button {
 
 .footer-project .footer-logo {
 	margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
+	.instant-snapper-info {
+		padding: 7em 0;
+	}
+
+	.instant-snapper-product {
+		display: block;
+		padding: 5em 2em;
+	}
+
+	.instant-snapper-product-img {
+		display: flex;
+		justify-content: center;
+		margin-top: 2em;
+	}
+}
+
+@media (max-width: 768px) {
+	.instant-snapper-info {
+		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 768px) minmax(1.5em, 1fr);
+		padding-left: 2em;
+		padding-right: 2em;
+		background: black;
+		background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+			url("../img/portfolio/pages/instant-snapper/main21.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.instant-snapper-product {
+		padding: 5em 1.5em;
+	}
+
+	.about-project-container {
+		display: block;
+	}
+
+	.about-project.title {
+		padding: 5em 0 1.5em;
+	}
+
+	.about-project.my-role {
+		padding: 0 0 5em;
+	}
+}
+
+@media (max-width: 550px) {
+	.instant-snapper-info-title {
+		font-size: 1.75rem;
+	}
+
+	.instant-snapper-info-text {
+		font-size: 0.75rem;
+	}
+
+	.instant-snapper-properties {
+		display: block;
+	}
+
+	.instant-snapper-properties .img-container img {
+		max-width: auto;
+	}
+
+	.instant-snapper-properties-item {
+		margin-bottom: 2em;
+	}
 }
