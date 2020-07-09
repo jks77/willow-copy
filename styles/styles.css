@@ -1461,6 +1461,16 @@ button {
 	margin-bottom: 2em;
 }
 
+.blog-post-link {
+	display: inline-block;
+	color: #000;
+	transition: all .2s ease-in-out;
+}
+
+.blog-post-link:hover {
+	color: #0faf97;
+}
+
 .blog-post-link-solopine-design {
 	margin-right: .75em;
 }
@@ -1522,9 +1532,14 @@ button {
 	.blog-post-content-container {
 		width: 100%;
 	}
+
+	.blog-post {
+		padding: 2em 0;
+	}
 }
 
 /* instant-snapper */
+
 .previous-next-container {
 	display: flex;
 	align-items: center;
