@@ -2008,3 +2008,37 @@ button {
 .flat-stroke-icons-container .download:hover {
 	color: #000;
 }
+
+@media (max-width: 990px) {
+	.flat-stroke-icons-container {
+		grid-column: 1 / -1;
+		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 600px) minmax(1.5em, 1fr);
+		gap: 0;
+		padding: 4em 0;
+	}
+
+	.flat-stroke-icons-container .img-container,
+	.flat-stroke-icons-container .flat-stroke-icons-content {
+		grid-column: 2 / span 1;
+	}
+
+	.flat-stroke-icons-container .img-container {
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 550px) {
+	.link-project {
+		font-size: 10px;
+	}
+
+	.x-container {
+		border: 0;
+		width: 70px;
+	}
+
+	.previous-next-container.with-next .nav-logo {
+		padding: 1em;
+		border: 0;
+	}
+}
