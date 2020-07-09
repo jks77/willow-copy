@@ -1544,12 +1544,6 @@ button {
 	display: flex;
 	align-items: center;
 	height: 100%;
-}
-
-.previous-next-container {
-	display: flex;
-	align-items: center;
-	height: 100%;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -1571,7 +1565,7 @@ button {
 	align-items: center;
 }
 
-.link-previous-project {
+.link-project {
 	font-size: 13px;
 	color: #aaa;
 	margin-left: auto;
@@ -1583,7 +1577,7 @@ button {
 	transition: all .2s ease-in-out;
 }
 
-.link-previous-project:hover {
+.link-project:hover {
 	color: #777;
 }
 
@@ -1809,6 +1803,10 @@ button {
 	color: #fff;
 }
 
+.share-project-social-links a:hover .count {
+	background-color: rgba(255, 255, 255, .35);
+}
+
 .social-link-container {
 	margin-right: 1.5em;
 }
@@ -1849,9 +1847,6 @@ button {
 	width: 100%;
 	font-weight: 700;
 	padding-top: .1em;
-}
-
-.count {
 	background-color: rgba(255, 255, 255, .25);
 }
 
@@ -1938,4 +1933,78 @@ button {
 	.instant-snapper-properties-item {
 		margin-bottom: 2em;
 	}
+}
+
+/* flat-stroke-icons-set */
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.space-between .link-project.project-next {
+	margin-left: 1em;
+}
+
+.previous-next-container.with-next .x-container {
+	margin-left: auto;
+}
+
+.flat-stroke-icons-container {
+	grid-column: 2 / span 1;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 3em;
+	padding: 7em 0;
+}
+
+.flat-stroke-icons-container img {
+	width: 100%;
+}
+
+.flat-stroke-icons-title {
+	font-size: 2.25rem;
+	line-height: 1.4;
+	margin-bottom: .75em;
+}
+
+.flat-stroke-icons-title::after {
+	content: '';
+	display: block;
+	height: 6px;
+	width: 60px;
+	background-color: black;
+	margin-top: .3em;
+}
+
+.flat-stroke-icons-text {
+	margin-bottom: 1em;
+}
+
+.flat-stroke-icons-container .date-title {
+	margin-top: 2em;
+}
+
+.flat-stroke-icons-container .date-title,
+.flat-stroke-icons-container .get-it {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 13px;
+}
+
+.flat-stroke-icons-container .date {
+	margin-bottom: 1em;
+}
+
+.flat-stroke-icons-container .download {
+	color: #0faf97;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	transition: all .2s ease-in-out;
+}
+
+.flat-stroke-icons-container .download:hover {
+	color: #000;
 }
