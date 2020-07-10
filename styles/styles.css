@@ -497,20 +497,19 @@ nav {
 	padding-top: 6em;
 }
 
-.servces-header {
+.services-header {
 	width: 100%;
 }
 
-.services-grid {
+.two-equal-column-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2em;
 	margin-bottom: 5em;
 }
 
-.service-item-container {
+.content-container {
 	grid-column: 1 / span 1;
-	display: flex;
 }
 
 .service-item {
@@ -2034,5 +2033,86 @@ button {
 	.previous-next-container.with-next .nav-logo {
 		padding: 1em;
 		border: 0;
+	}
+}
+
+/* solo-pine-website */
+
+.project-solo-pine-website {
+	grid-column: 2 / span 1;
+	padding-top: 6em;
+}
+
+.project-solo-pine-website .content-container h1 {
+	font-size: 2.25rem;
+	font-weight: 800;
+}
+
+.project-solo-pine-website .content-container p {
+	margin: 1em 0;
+}
+
+.project-solo-pine-website .content-container img {
+	margin-top: 1em;
+	max-width: 100%;
+}
+
+.project-solo-pine-website .content-container .img-container {
+	width: 100%;
+}
+
+.project-solo-pine-website .img-container img {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+}
+
+.project-info {
+	grid-column: 2 / span 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+	padding: 4em 1em;
+	background-color: #f4f4f4;
+}
+
+.project-info h2 {
+	margin-bottom: .5em;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1.125rem;
+}
+
+.project-info p {
+	color: #888888;
+}
+
+.solo-pine-project-img-container {
+	grid-column: 2 / span 1;
+	width: 100%;
+	padding: 8em 0;
+}
+
+.solo-pine-project-img-container img {
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.project-solo-pine-website .two-equal-column-grid {
+		display: block;
+	}
+
+	.solo-pine-project-img-container {
+		padding: 4em 0;
+	}
+
+	.project-solo-pine-website .img-container img {
+		margin-right: auto;
+		margin-top: 3em;
+	}
+
+	.project-info {
+		grid-template-columns: 1fr;
+		padding: 2em 1em;
 	}
 }
