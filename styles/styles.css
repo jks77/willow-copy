@@ -1529,6 +1529,8 @@ button {
 
 /* instant-snapper */
 
+/* previous next */
+
 .previous-next-container {
 	display: flex;
 	align-items: center;
@@ -1609,8 +1611,6 @@ button {
 	color: #888;
 	font-family: 'Open Sans', sans-serif;
 }
-
-/* previous next */
 
 /* instant-snapper-info */
 
@@ -1940,7 +1940,7 @@ button {
 	margin-left: auto;
 }
 
-.flat-stroke-icons-container {
+.project-container {
 	grid-column: 2 / span 1;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -1948,17 +1948,21 @@ button {
 	padding: 7em 0;
 }
 
-.flat-stroke-icons-container img {
+.project-container .img-container {
+	margin-bottom: 2em;
+}
+
+.project-container img {
 	width: 100%;
 }
 
-.flat-stroke-icons-title {
+.project-title {
 	font-size: 2.25rem;
 	line-height: 1.4;
 	margin-bottom: .75em;
 }
 
-.flat-stroke-icons-title::after {
+.project-title::after {
 	content: '';
 	display: block;
 	height: 6px;
@@ -1967,26 +1971,27 @@ button {
 	margin-top: .3em;
 }
 
-.flat-stroke-icons-text {
+.project-text {
 	margin-bottom: 1em;
 }
 
-.flat-stroke-icons-container .date-title {
+.project-container .date-title {
 	margin-top: 2em;
 }
 
-.flat-stroke-icons-container .date-title,
-.flat-stroke-icons-container .get-it {
+.project-container .date-title,
+.project-container h3 {
 	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 13px;
 }
 
-.flat-stroke-icons-container .date {
+.project-container .date,
+.project-container p {
 	margin-bottom: 1em;
 }
 
-.flat-stroke-icons-container .download {
+.project-container .download {
 	color: #0faf97;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -1994,24 +1999,24 @@ button {
 	transition: all .2s ease-in-out;
 }
 
-.flat-stroke-icons-container .download:hover {
+.project-container .download:hover {
 	color: #000;
 }
 
 @media (max-width: 990px) {
-	.flat-stroke-icons-container {
+	.project-container {
 		grid-column: 1 / -1;
 		grid-template-columns: minmax(1.5em, 1fr) minmax(0, 600px) minmax(1.5em, 1fr);
 		gap: 0;
 		padding: 4em 0;
 	}
 
-	.flat-stroke-icons-container .img-container,
-	.flat-stroke-icons-container .flat-stroke-icons-content {
+	.project-container .project-images-container,
+	.project-content {
 		grid-column: 2 / span 1;
 	}
 
-	.flat-stroke-icons-container .img-container {
+	.project-container .img-container {
 		margin-bottom: 2em;
 	}
 }
