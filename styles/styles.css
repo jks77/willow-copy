@@ -27,8 +27,12 @@ body {
 	scroll-behavior: smooth;
 }
 
+q,
 p {
 	font-family: 'Open Sans', sans-serif;
+}
+
+p {
 	font-size: 14px;
 	line-height: 1.8;
 }
@@ -335,11 +339,6 @@ nav {
 	margin-bottom: 5em;
 }
 
-.info-brand-intro-text {
-	font-size: 14px;
-	line-height: 1.8;
-}
-
 .info-brand .intro-text-link {
 	color: #0faf97;
 	font-weight: 700;
@@ -358,7 +357,6 @@ nav {
 	letter-spacing: 2px;
 	color: #333;
 	opacity: 0.25;
-	font-size: 14px;
 }
 
 .info-brand-percentage-name {
@@ -469,7 +467,6 @@ nav {
 }
 
 .trivia-information-subject {
-	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -533,7 +530,6 @@ nav {
 }
 
 .service-content {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #444;
 }
@@ -552,8 +548,7 @@ nav {
 	align-items: center;
 }
 
-.service-icon .fas,
-.service-icon .far {
+.service-icon svg {
 	border-radius: 50%;
 	background: #0faf97;
 	width: 75px;
@@ -561,12 +556,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.fa-desktop,
-.fa-lightbulb,
-.fa-globe,
-.fa-store {
 	color: white;
 	font-size: 30px;
 }
@@ -587,8 +576,13 @@ nav {
 	}
 
 	.services-img-container {
+		margin-top: 4em;
 		display: flex;
 		justify-content: center;
+	}
+
+	.services-img-container img {
+		margin-right: auto;
 	}
 }
 
@@ -804,7 +798,6 @@ nav {
 }
 
 q {
-	font-family: 'Open Sans', sans-serif;
 	color: #ddd;
 	font-size: 20px;
 	font-weight: normal;
@@ -914,7 +907,6 @@ input[type='radio']:first-of-type {
 .team-card .card-content {
 	font-size: 13px;
 	line-height: 1.8;
-	font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -973,8 +965,6 @@ input[type='radio']:first-of-type {
 }
 
 .buy-willow-content p {
-	width: 100%;
-	font-size: 14px;
 	margin-bottom: 3em;
 }
 
@@ -1099,7 +1089,6 @@ input[type='radio']:first-of-type {
 
 .blog-card-container .card-content {
 	margin-bottom: 1em;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	line-height: 1.8;
 }
