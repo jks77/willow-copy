@@ -1990,7 +1990,7 @@ button {
 	margin-bottom: 1em;
 }
 
-.project-container .download {
+.project-container .project-link {
 	color: #0faf97;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -1998,7 +1998,7 @@ button {
 	transition: all .2s ease-in-out;
 }
 
-.project-container .download:hover {
+.project-container .project-link:hover {
 	color: #000;
 }
 
@@ -2114,5 +2114,21 @@ button {
 	.project-info {
 		grid-template-columns: 1fr;
 		padding: 2em 1em;
+	}
+}
+
+/* food-center-nyc */
+
+.food-center-nyc-container .created-by {
+	margin-top: 2em;
+}
+
+.food-center-nyc-container .date-title {
+	margin-top: 1em;
+}
+
+@media (max-width: 990px) {
+	.food-center-nyc-container .project-content {
+		padding: 2em 0 0;
 	}
 }
