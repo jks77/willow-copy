@@ -2497,7 +2497,11 @@ h3.left-right-line {
 }
 
 @media (max-width: 990px) {
-	.blog-post-content-container {
+	.blog-post-container {
+		display: block;
+	}
+
+	.blog-post-container .blog-post-content-container {
 		width: 100%;
 	}
 }
