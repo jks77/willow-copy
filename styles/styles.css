@@ -1443,11 +1443,12 @@ button {
 	border: 6px solid white;
 }
 
-.blog-posts-container .blog-post-title {
+.blog-post-title {
 	font-size: 1.9rem;
 	font-weight: 800;
 	margin-bottom: .25em;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .blog-posts-container .blog-post-info {
@@ -2151,6 +2152,10 @@ button {
 	grid-template-columns: 2fr 1fr;
 }
 
+.blog-post-container .blog-post {
+	padding-bottom: 2em;
+}
+
 .two-column-left,
 .one-column-right {
 	padding-top: 3em;
@@ -2179,13 +2184,6 @@ button {
 	transform: translate(-50%, 40%);
 	border-radius: 50%;
 	border: 6px solid white;
-}
-
-.blog-post-container .blog-post-title {
-	font-size: 1.9rem;
-	font-weight: 800;
-	margin-bottom: .25em;
-	letter-spacing: 1px;
 }
 
 .blog-post-container .blog-post-info {
