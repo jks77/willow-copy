@@ -2562,7 +2562,7 @@ h3.left-right-line {
 	border: 0;
 }
 
-.disclosure .blog-post-content-container {
+.blog-post-content-container {
 	padding-bottom: 1.5em;
 }
 
@@ -2582,4 +2582,11 @@ h3.left-right-line {
 	.resp-container {
 		padding-top: 35%;
 	}
+}
+
+/* best photography */
+
+.best-photography .best-photographer-link {
+	color: #ff502e;
+	font-weight: 700;
 }
