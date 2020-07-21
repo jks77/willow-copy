@@ -2319,7 +2319,7 @@ h3.left-right-line {
 	border-bottom: 1px solid #eee;
 }
 
-.blog-post-card-container div {
+.blog-post-card-container .card {
 	margin-right: 1em;
 	text-align: center;
 	max-width: 240px;
@@ -2504,11 +2504,37 @@ h3.left-right-line {
 	.blog-post-container .blog-post-content-container {
 		width: 100%;
 	}
+
+	.blog-post-container .two-column-left {
+		padding-right: 0;
+		border-right: 0;
+	}
+
+	.one-column-right {
+		padding: 0;
+	}
 }
 
 @media (max-width: 550px) {
 	.blog-post-container .form-item input,
 	.blog-post-container .form-item textarea {
 		width: 100%;
+	}
+
+	.blog-post-card-container {
+		display: block;
+	}
+
+	.blog-post-card-container .card {
+		display: block;
+		margin: 0 auto;
+
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 410px) {
+	.fb-page {
+		width: 260px;
 	}
 }
