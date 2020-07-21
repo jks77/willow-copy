@@ -1152,10 +1152,10 @@ input[type='radio']:first-of-type {
 	filter: brightness(100%);
 }
 
-/* iframe {
-	display: inline-block;
+iframe {
+	display: block;
 	width: 100%;
-} */
+}
 
 .google-maps-city {
 	font-size: 40px;
@@ -2141,7 +2141,7 @@ button {
 
 /* blogs */
 
-/* best drinks */
+/* general */
 
 .blog-post-container {
 	grid-column: 2 / span 1;
@@ -2542,5 +2542,44 @@ h3.left-right-line {
 @media (max-width: 410px) {
 	.fb-page {
 		width: 260px;
+	}
+}
+
+/* disclosure  */
+
+.resp-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 25%;
+}
+
+.resp-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.disclosure .blog-post-content-container {
+	padding-bottom: 1.5em;
+}
+
+@media (max-width: 990px) {
+	.resp-container {
+		padding-top: 15%;
+	}
+}
+
+@media (max-width: 768px) {
+	.resp-container {
+		padding-top: 25%;
+	}
+}
+
+@media (max-width: 550px) {
+	.resp-container {
+		padding-top: 35%;
 	}
 }
