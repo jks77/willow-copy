@@ -1152,10 +1152,10 @@ input[type='radio']:first-of-type {
 	filter: brightness(100%);
 }
 
-iframe {
-	display: block;
+/* iframe {
+	display: inline-block;
 	width: 100%;
-}
+} */
 
 .google-maps-city {
 	font-size: 40px;
@@ -1243,6 +1243,12 @@ footer {
 .footer-item-icons-container > .social-links-icons a {
 	color: white;
 	border: 2px solid white;
+	transition: all .3s ease-in-out;
+}
+
+.footer-item-icons-container > .social-links-icons a:hover,
+.footer-item-icons-container > .social-links-icons a:focus {
+	opacity: .6;
 }
 
 .form-item {
