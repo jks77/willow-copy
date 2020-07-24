@@ -1838,10 +1838,12 @@ button {
 }
 
 .count {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .875rem;
 	display: inline-block;
 	width: 100%;
 	font-weight: 700;
-	padding-top: .1em;
+	padding: .1em;
 	background-color: rgba(255, 255, 255, .25);
 }
 
