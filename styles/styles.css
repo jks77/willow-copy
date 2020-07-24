@@ -1434,7 +1434,7 @@ button {
 	max-width: 100%;
 }
 
-.blog-posts-container .blog-post-avatar {
+.blog-post-avatar {
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -2175,15 +2175,6 @@ button {
 .blog-post-container .blog-post-img {
 	width: 100%;
 	max-width: 100%;
-}
-
-.blog-post-container .blog-post-avatar {
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	transform: translate(-50%, 40%);
-	border-radius: 50%;
-	border: 6px solid white;
 }
 
 .blog-post-container .blog-post-info {
