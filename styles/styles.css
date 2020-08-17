@@ -63,7 +63,20 @@ header {
 }
 
 .hero-heading {
+	opacity: 0;
+	animation: fadeUp 1s forwards;
+	animation-delay: .2s;
 	margin-bottom: 1em;
+}
+
+@keyframes fadeUp {
+	0% {
+		transform: translateY(6rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .hero-intro-text {
